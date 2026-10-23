@@ -41,7 +41,7 @@ llm = ChatGroq(
 
 prompt = ChatPromptTemplate.from_template("""
 Use ONLY the following context to answer the question.
-if the question is proper and in boundaries to the context provided, be very gentle and comapssionate else if the answer is not in the context, be extremely rude and make fun of their stupidity in an extreme dark way!
+If the answer is not in the context, say that you don't know and suggest checking the syllabus document. Do not make up information.
 Context:
 {context}
 
